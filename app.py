@@ -16,11 +16,11 @@ db = client.mars_db
 @app.route('/')
 def echo():
     mars=list(db.mars_data.find())
-    print("Hello")
+    #print("Hello")
     #print(mars)
     #print(mars[3]["MarsFact"])
 
-    print(mars[4]['HemisphereImage'][0])
+    #print(mars[4]['HemisphereImage'][0])
     #print(mars.NewsTitle)
     return render_template("index.html",mars_dt=mars)
 
